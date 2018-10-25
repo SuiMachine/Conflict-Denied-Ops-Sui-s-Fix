@@ -201,6 +201,7 @@ bool WINAPI DllMain(HMODULE hModule, DWORD fdwReason, LPVOID lpReserved) {
 
 		HookResolutions((DWORD)baseModule, GetPrivateProfileInt("MAIN", "ResolutionX", 0, path), GetPrivateProfileInt("MAIN", "ResolutionY", 0, path));
 		HookFOV((DWORD)baseModule, (float)GetPrivateProfileInt("MAIN", "FOV", 60, path));
+		*(float*)((DWORD)baseModule + 0x58D224) = GetPrivateProfileFloat("MAIN", "FreeLookSensitivty", 10.0f, path);
 
         fFPSLimit = static_cast<float>(GetPrivateProfileInt("MAIN", "FPSLimit", 0, path));
         if (fFPSLimit)
