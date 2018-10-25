@@ -87,13 +87,13 @@
       <RuntimeLibrary>MultiThreaded</RuntimeLibrary>
     </ClCompile>
     <ResourceCompile>
-      <PreprocessorDefinitions>rsc_CompanyName=\"ThirteenAG\";rsc_LegalCopyright=\"MIT License\";rsc_FileVersion=\"1.0.0.0\";rsc_ProductVersion=\"1.0.0.0\";rsc_InternalName=\"d3d9-wrapper\";rsc_ProductName=\"d3d9-wrapper\";rsc_OriginalFilename=\"d3d9.dll\";rsc_FileDescription=\"https://thirteenag.github.io/wfp\";rsc_UpdateUrl=\"https://github.com/ThirteenAG/d3d9-wrapper\";NDEBUG;%(PreprocessorDefinitions)</PreprocessorDefinitions>
+      <PreprocessorDefinitions>rsc_CompanyName=\"ThirteenAG  &amp;&amp; SuiMachine\";rsc_LegalCopyright=\"MIT License\";rsc_FileVersion=\"1.0.0.0\";rsc_ProductVersion=\"1.0.0.0\";rsc_InternalName=\"d3d9-wrapper\";rsc_ProductName=\"d3d9-wrapper\";rsc_OriginalFilename=\"d3d9.dll\";rsc_FileDescription=\"https://thirteenag.github.io/wfp\";rsc_UpdateUrl=\"https://github.com/ThirteenAG/d3d9-wrapper\";NDEBUG;%(PreprocessorDefinitions)</PreprocessorDefinitions>
     </ResourceCompile>
     <Link>
       <SubSystem>Windows</SubSystem>
       <EnableCOMDATFolding>true</EnableCOMDATFolding>
       <OptimizeReferences>true</OptimizeReferences>
-      <ImportLibrary>..\data\d3d9.lib</ImportLibrary>
+      <ImportLibrary>data\d3d9.lib</ImportLibrary>
       <ModuleDefinitionFile>source/d3d9.def</ModuleDefinitionFile>
     </Link>
     <BuildLog>
