@@ -1,0 +1,2 @@
+# Conflict - Denied Ops - Sui's Fix
+A tiny wrapper based on ThirteenAG's code, that allowed for running Confict - Denied Ops in windowed mode, simplifies running the game on widescreen resolutions (1920x1080 and higher) as well as adds an option to modify FOV.
