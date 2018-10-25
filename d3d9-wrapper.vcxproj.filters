@@ -1,0 +1,40 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<Project ToolsVersion="4.0" xmlns="http://schemas.microsoft.com/developer/msbuild/2003">
+  <ItemGroup>
+    <ClInclude Include="source\d3d9.h">
+      <Filter>Source</Filter>
+    </ClInclude>
+    <ClInclude Include="source\VersionInfo.h">
+      <Filter>Source\VersionInfo</Filter>
+    </ClInclude>
+    <ClInclude Include="source\hookFunctions.h">
+      <Filter>Source</Filter>
+    </ClInclude>
+    <ClInclude Include="source\ResolutionsHook.h">
+      <Filter>Source</Filter>
+    </ClInclude>
+  </ItemGroup>
+  <ItemGroup>
+    <Filter Include="Source">
+      <UniqueIdentifier>{0e592d3c-fbb2-4bba-b35e-1b407ce09cef}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="Source\VersionInfo">
+      <UniqueIdentifier>{cdaac08f-8302-46da-acc6-b111b8e1e404}</UniqueIdentifier>
+    </Filter>
+  </ItemGroup>
+  <ItemGroup>
+    <ClCompile Include="source\d3d9.cpp">
+      <Filter>Source</Filter>
+    </ClCompile>
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="source\d3d9.def">
+      <Filter>Source</Filter>
+    </None>
+  </ItemGroup>
+  <ItemGroup>
+    <ResourceCompile Include="source\VersionInfo.rc">
+      <Filter>Source\VersionInfo</Filter>
+    </ResourceCompile>
+  </ItemGroup>
+</Project>
