@@ -50,15 +50,3 @@ static bool Hook(DWORD targetToHook, void * ourFunction, int overrideLenght)
 	VirtualProtect((void*)targetToHook, overrideLenght, curProtectionFlag, &temp);
 	return true;
 }
-
-static float GetPrivateProfileFloat(char* lpAppName, char* lpKeyName, float defaultValue, char* lpFileName)
-{
-	char strValue[255];
-	char floatAsCharArray[64];
-	int ret = snprintf(floatAsCharArray, 64, "%f", defaultValue);
-	if (ret < 0)
-		return defaultValue;
-
-	DWORD LenghtWhatever = GetPrivateProfileString(lpAppName, lpKeyName, floatAsCharArray, strValue, 254, lpFileName);
-	return (float)std::atof(strValue);
-}

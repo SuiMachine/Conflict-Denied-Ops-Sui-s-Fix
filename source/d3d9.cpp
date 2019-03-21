@@ -194,16 +194,22 @@ bool WINAPI DllMain(HMODULE hModule, DWORD fdwReason, LPVOID lpReserved) {
         GetModuleFileNameA(hm, path, sizeof(path));
         *strrchr(path, '\\') = '\0';
         strcat_s(path, "\\d3d9.ini");
-        bForceWindowedMode = GetPrivateProfileInt("MAIN", "ForceWindowedMode", 0, path) != 0;
+		CIniReader configReader(path);
+
+		bForceWindowedMode = configReader.ReadInteger("MAIN", "ForceWindowedMode", 0) != 0;
 
 		HMODULE baseModule = GetModuleHandle(NULL);
 		UnprotectModule(baseModule);
 
-		HookResolutions((DWORD)baseModule, GetPrivateProfileInt("MAIN", "ResolutionX", 0, path), GetPrivateProfileInt("MAIN", "ResolutionY", 0, path));
-		HookFOV((DWORD)baseModule, (float)GetPrivateProfileInt("MAIN", "FOV", 60, path));
-		*(float*)((DWORD)baseModule + 0x58D224) = GetPrivateProfileFloat("MAIN", "FreeLookSensitivty", 10.0f, path);
+		HookResolutions((DWORD)baseModule,
+			configReader.ReadInteger("MAIN", "ResolutionX", 0),
+			configReader.ReadInteger("MAIN", "ResolutionY", 0));
 
-        fFPSLimit = static_cast<float>(GetPrivateProfileInt("MAIN", "FPSLimit", 0, path));
+		HookFOV((DWORD)baseModule, 
+			(float)configReader.ReadInteger("MAIN", "FOV", 60));
+		*(float*)((DWORD)baseModule + 0x58D224) = configReader.ReadFloat("MAIN", "FreeLookSensitivty", 10.0f);
+
+        fFPSLimit = static_cast<float>(configReader.ReadInteger("MAIN", "FPSLimit", 0));
         if (fFPSLimit)
             bFPSLimit = true;
 

@@ -1,6 +1,7 @@
 #include <d3d9.h>
 #include <atlstr.h>  
 #include <set>
+#include "../externals/inireader/IniReader.h"
 #include "hookFunctions.h"
 #include "ResolutionsHook.h"
 

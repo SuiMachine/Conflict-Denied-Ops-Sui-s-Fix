@@ -85,6 +85,7 @@
       <MinimalRebuild>false</MinimalRebuild>
       <StringPooling>true</StringPooling>
       <RuntimeLibrary>MultiThreaded</RuntimeLibrary>
+      <LanguageStandard>stdcpplatest</LanguageStandard>
     </ClCompile>
     <ResourceCompile>
       <PreprocessorDefinitions>rsc_CompanyName=\"ThirteenAG  &amp;&amp; SuiMachine\";rsc_LegalCopyright=\"MIT License\";rsc_FileVersion=\"1.0.0.0\";rsc_ProductVersion=\"1.0.0.0\";rsc_InternalName=\"d3d9-wrapper\";rsc_ProductName=\"d3d9-wrapper\";rsc_OriginalFilename=\"d3d9.dll\";rsc_FileDescription=\"https://thirteenag.github.io/wfp\";rsc_UpdateUrl=\"https://github.com/ThirteenAG/d3d9-wrapper\";NDEBUG;%(PreprocessorDefinitions)</PreprocessorDefinitions>
@@ -108,6 +109,7 @@
       <DebugInformationFormat>EditAndContinue</DebugInformationFormat>
       <Optimization>Disabled</Optimization>
       <RuntimeLibrary>MultiThreadedDebug</RuntimeLibrary>
+      <LanguageStandard>stdcpplatest</LanguageStandard>
     </ClCompile>
     <ResourceCompile>
       <PreprocessorDefinitions>rsc_CompanyName=\"ThirteenAG\";rsc_LegalCopyright=\"MIT License\";rsc_FileVersion=\"1.0.0.0\";rsc_ProductVersion=\"1.0.0.0\";rsc_InternalName=\"d3d9-wrapper\";rsc_ProductName=\"d3d9-wrapper\";rsc_OriginalFilename=\"d3d9.dll\";rsc_FileDescription=\"https://thirteenag.github.io/wfp\";rsc_UpdateUrl=\"https://github.com/ThirteenAG/d3d9-wrapper\";DEBUG;%(PreprocessorDefinitions)</PreprocessorDefinitions>
@@ -130,6 +132,7 @@
       <DebugInformationFormat>EditAndContinue</DebugInformationFormat>
       <Optimization>Disabled</Optimization>
       <RuntimeLibrary>MultiThreadedDebug</RuntimeLibrary>
+      <LanguageStandard>stdcpplatest</LanguageStandard>
     </ClCompile>
     <ResourceCompile>
       <PreprocessorDefinitions>rsc_CompanyName=\"ThirteenAG\";rsc_LegalCopyright=\"MIT License\";rsc_FileVersion=\"1.0.0.0\";rsc_ProductVersion=\"1.0.0.0\";rsc_InternalName=\"d3d9-wrapper\";rsc_ProductName=\"d3d9-wrapper\";rsc_OriginalFilename=\"d3d9.dll\";rsc_FileDescription=\"https://thirteenag.github.io/wfp\";rsc_UpdateUrl=\"https://github.com/ThirteenAG/d3d9-wrapper\";DEBUG;%(PreprocessorDefinitions)</PreprocessorDefinitions>
